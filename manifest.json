@@ -2,5 +2,11 @@
 "name":"NLStyler",
 "description":"Build an Extension to change Nairaland Style!",
 "version":"1.0",
-"manifest_version":3
+"short_name": "Stylish Nairaland",
+"manifest_version":2,
+"content_scripts":[{
+"js":["content.js"],
+"css":["style.css"],
+"matches":["*://www.nairaland.com/*"]
+}]
 }
